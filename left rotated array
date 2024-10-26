@@ -1,0 +1,13 @@
+def leftrotatebyone(arr):
+    n = len(arr)
+    firstelement = arr[0]
+    for i in range(1, n):
+        arr[i - 1] = arr[i]
+    arr[n - 1] = firstelement
+    return arr
+a=int(input())
+arr=[]
+for i in range(a):
+    arr.append(int(input()))
+rotatedarray = leftrotatebyone(arr)
+print( rotatedarray)
